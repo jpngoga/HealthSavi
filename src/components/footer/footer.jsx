@@ -5,7 +5,15 @@ import "./css/style.css";
 import "./js/jquery-3.3.1.min.js";
 import "./js/popper.min.js";
 import "./js/bootstrap.min.js";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+
+navigate("/contact")
+
+
+  }
   return (
     <>
       <footer
@@ -19,13 +27,16 @@ const Footer = () => {
               style={{ background: "#43D5CB" }}
             >
               <div>
-                <h2 class="mb-0">Ready for a next project?</h2>
-                <h3 class="text-dark">Let's get started!</h3>
+                <h2 class="mb-0">We Are ALways Looking To Improve </h2>
+                <h3 class="text-dark">Any FeedBack?</h3>
               </div>
-              <div class="ml-auto">
-                <a href="#" class="btn btn-dark rounded-0 py-3 px-5">
-                  Contact us
-                </a>
+              <div class="ml-auto" onClick={handleClick}>
+                                <a href="#" class="btn btn-dark rounded-0 py-3 px-5">
+                                Contact us
+                              </a>
+              
+                
+                
               </div>
             </div>
             <div class="row">
@@ -38,13 +49,13 @@ const Footer = () => {
                 </p>
               </div>
               <div class="col-sm">
-                <h3 >Customers</h3>
+                <h3>Customers</h3>
                 <ul class="list-unstyled links">
                   <li>
-                    <a href="#" style={{color:"black"}}>Buyer</a>
+                    <a href="#">Buyer</a>
                   </li>
                   <li>
-                    <a href="#" style={{color:"black"}}>Supplier</a>
+                    <a href="#">Supplier</a>
                   </li>
                 </ul>
               </div>
@@ -52,13 +63,13 @@ const Footer = () => {
                 <h3>Company</h3>
                 <ul class="list-unstyled links">
                   <li>
-                    <a href="#" style={{color:"black"}}>About us</a>
+                    <a href="#">About us</a>
                   </li>
                   <li>
-                    <a href="#" style={{color:"black"}}>Careers</a>
+                    <a href="#">Careers</a>
                   </li>
                   <li>
-                    <a href="#" style={{color:"black"}}>Contact us</a>
+                    <a href="#">Contact us</a>
                   </li>
                 </ul>
               </div>
@@ -66,10 +77,10 @@ const Footer = () => {
                 <h3>Further Information</h3>
                 <ul class="list-unstyled links">
                   <li>
-                    <a href="#" style={{color:"black"}}>Terms &amp; Conditions</a>
+                    <a href="#">Terms &amp; Conditions</a>
                   </li>
                   <li>
-                    <a href="#" style={{color:"black"}}>Privacy Policy</a>
+                    <a href="#">Privacy Policy</a>
                   </li>
                 </ul>
               </div>
